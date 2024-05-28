@@ -203,7 +203,7 @@ Retrieve Amazon questions and answers by supplying Amazon product ID (ASIN) usin
 | PHP      | [php/amazon-questions.php](/url)    | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 | Node.js  | [nodejs/amazon-questions.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 
-### Amazon sellers `amazon_sellers`
+### Amazon sellers scraping `amazon_sellers`
 Retrieve Amazon seller page information by supplying a seller ID.
 
 #### Parameters
