@@ -68,7 +68,7 @@ Retrieve Amazon listings by supplying a full Amazon URL.
 |`url`        |`string`  | The Amazon URL to retrieve data from. |
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
 
@@ -454,7 +454,7 @@ Retrieve Amazon search results by providing a query and a list of parameters.
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`category`   |`string`  | Product category ID. You can find it by opening a category and looking at the URL under the *node* parameter: `node=<category>`.|
 |`merchant`   |`string`  | The merchant ID. You can find it by opening the *Sold by* link of the seller on a product page. The merchant ID appears in the URL under the *seller* parameter: `seller=<merchant>`.|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
@@ -479,7 +479,7 @@ Retrieve Amazon listings by supplying Amazon product ID (ASIN).
 |`query`      |`string`  | Amazon product ID (ASIN). |
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`autoselect_variant`| `boolean`| To get accurate Buy Box or pricing data, set this parameter to `TRUE`. |
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
@@ -504,7 +504,7 @@ Retrieve Amazon pricing results by supplying Amazon product ID (ASIN). The respo
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
 
@@ -528,7 +528,7 @@ Retrieve Amazon reviews by supplying Amazon product ID (ASIN).
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
 
@@ -551,7 +551,7 @@ Retrieve Amazon questions and answers by supplying Amazon product ID (ASIN) usin
 |`query`      |`string`  | Amazon product ID (ASIN). |
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
 
@@ -598,7 +598,7 @@ Retrieve Amazon best seller listings by supplying the category name to the query
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
 |`num_pages`  |`integer`  | Number of results to retrieve from each page.|
-|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
+|`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: `desktop`, `desktop_chrome`, `desktop_edge`, `desktop_firefox`, `desktop_opera`, `desktop_safari`, `mobile`, `mobile_android`, `mobile_ios`, `tablet`, `tablet_android`, `tablet_ios`|
 |`category`  |`string`  | Product category ID. You can find it by opening a category and looking at the URL under the *node* parameter: `node=<category>` |
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
