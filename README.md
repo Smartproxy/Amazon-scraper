@@ -617,7 +617,7 @@ You can find these response codes in the JSON response as `parse_status_code` an
 | **12009**  |Error    | Target not found. |Make sure the parameters you passed are correct and supported.|
 
 ## Postman collection
--
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/23304112-92a123e7-171c-497e-8ca1-57eff04361f3?action=collection%2Ffork&collection-url=entityId%3D23304112-92a123e7-171c-497e-8ca1-57eff04361f3%26entityType%3Dcollection%26workspaceId%3D52705bab-433c-4fbf-afce-ccbfc97430fe)
 
 ## License
 All code is released under the [MIT License](https://github.com/Smartproxy/Smartproxy/blob/master/LICENSE).
