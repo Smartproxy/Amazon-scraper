@@ -18,7 +18,7 @@
   - [Amazon product reviews scraping](#amazon-product-reviews-scraping-amazon_reviews)
   - [Amazon product questions & answers scraping](#amazon-product-questions--answers-scraping-amazon_questions)
   - [Amazon product sellers scraping](#amazon-sellers-scraping-amazon_sellers)
-  - [Amazon product best sellers listing scraping](#amazon-product-best-sellers-listing-scraping)
+  - [Amazon product best sellers listing scraping](#amazon-product-best-sellers-listing-scraping-amazon_bestsellers)
 - [Response codes](#response-codes)
   - [HTTP response codes](#http-response-codes)
   - [Parsed result response codes](#parsed-result-response-codes)
@@ -584,7 +584,7 @@ Retrieve Amazon seller page information by supplying a seller ID.
 | PHP      | [php/amazon-sellers.php](/url)    | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 | Node.js  | [nodejs/amazon-sellers.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 
-### Amazon product best sellers listing scraping
+### Amazon product best sellers listing scraping `amazon_bestsellers`
 Retrieve Amazon best seller listings by supplying the category name to the query parameter.
 
 #### Parameters
