@@ -561,7 +561,7 @@ Retrieve Amazon questions and answers by supplying Amazon product ID (ASIN) usin
 | Node.js  | [nodejs/amazon-questions.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 
 ### Amazon product best sellers listing scraping `amazon_bestsellers`
-Retrieve Amazon best seller listings by supplying the category name to the query parameter.
+Retrieve Amazon best-seller listings by supplying the category name to the query parameter.
 
 #### Parameters
 **Required**: `target`, `query`
@@ -569,7 +569,7 @@ Retrieve Amazon best seller listings by supplying the category name to the query
 | Parameter   | Type     | Description |
 |:------------|:---------|:------------|
 |`target`     |`string`  | Must be `amazon_reviews`.|
-|`query`      |`string`  | Amazon product ID (ASIN). |
+|`query`      |`string`  | Category name. You can find it in the best sellers page URL located after `/zgbs/`. For example, the category name of `https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles/` is `sports-collectibles`|
 |`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML|
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
