@@ -463,7 +463,7 @@ Retrieve Amazon search results by providing a query and a list of parameters.
 |:---------|:---------------------------------|:----------|
 | Python   | [python/amazon_search.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_search.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_search.py > amazon_search.py`|
 | PHP      | [php/amazon_search.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_search.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_search.php > amazon_search.php`|
-| Node.js  | [nodejs/amazon_search.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_search.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_search.js > amazon_search.js`|
+| Node.js  | [nodejs/amazon_search.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_search.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_search.js > amazon_search.js`|
 
 ### Amazon product scraping `amazon_product`
 Retrieve Amazon listings by supplying Amazon product ID (ASIN). 
