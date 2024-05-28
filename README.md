@@ -73,7 +73,7 @@ Retrieve Amazon listings by supplying a full Amazon URL.
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazon-search.py`|
+| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon.py > amazon.py`|
 | PHP      | [php/amazon.php](/url)    | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazon-search.py`|
 | Node.js  | [nodejs/amazon.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazon-search.py`|
 
