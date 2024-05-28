@@ -461,9 +461,9 @@ Retrieve Amazon search results by providing a query and a list of parameters.
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_search.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_search.py > amazon_search.py`|
-| PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_search.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_search.php > amazon_search.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_search.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_search.js > amazon_search.js`|
+| Python   | [python/amazon_search.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_search.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_search.py > amazon_search.py`|
+| PHP      | [php/amazon_search.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_search.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_search.php > amazon_search.php`|
+| Node.js  | [nodejs/amazon_search.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_search.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_search.js > amazon_search.js`|
 
 ### Amazon product scraping `amazon_product`
 Retrieve Amazon listings by supplying Amazon product ID (ASIN). 
@@ -487,7 +487,7 @@ Retrieve Amazon listings by supplying Amazon product ID (ASIN).
 |:---------|:---------------------------------|:----------|
 | Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_product.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_product.py > amazon_product.py`|
 | PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_product.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_product.php > amazon_product.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_product.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_product.js > amazon_product.js`|
+| Node.js  | [nodejs/amazon.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_product.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_product.js > amazon_product.js`|
 
 ### Amazon product pricing scraping `amazon_pricing`
 Retrieve Amazon pricing results by supplying Amazon product ID (ASIN). The response will list all sellers of the same product and their prices.
@@ -509,9 +509,9 @@ Retrieve Amazon pricing results by supplying Amazon product ID (ASIN). The respo
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_pricing.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_pricing.py > amazon_pricing.py`|
-| PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_pricing.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_pricing.php > amazon_pricing.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_pricing.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_pricing.js > amazon_pricing.js`|
+| Python   | [python/amazon_pricing.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_pricing.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_pricing.py > amazon_pricing.py`|
+| PHP      | [php/amazon_pricing.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_pricing.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_pricing.php > amazon_pricing.php`|
+| Node.js  | [nodejs/amazon_pricing.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_pricing.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_pricing.js > amazon_pricing.js`|
 
 ### Amazon product reviews scraping `amazon_reviews`
 Retrieve Amazon reviews by supplying Amazon product ID (ASIN).
@@ -533,9 +533,9 @@ Retrieve Amazon reviews by supplying Amazon product ID (ASIN).
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_reviews.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_reviews.py > amazon_reviews.py`|
-| PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_reviews.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_reviews.php > amazon_reviews.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_reviews.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_reviews.js > amazon_reviews.js`|
+| Python   | [python/amazon_reviews.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_reviews.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_reviews.py > amazon_reviews.py`|
+| PHP      | [php/amazon_reviews.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_reviews.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_reviews.php > amazon_reviews.php`|
+| Node.js  | [nodejs/amazon_reviews.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_reviews.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_reviews.js > amazon_reviews.js`|
 
 ### Amazon product questions & answers scraping `amazon_questions`
 Retrieve Amazon questions and answers by supplying Amazon product ID (ASIN) using the query parameter.
@@ -556,9 +556,9 @@ Retrieve Amazon questions and answers by supplying Amazon product ID (ASIN) usin
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_questions.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_questions.py > amazon_questions.py`|
-| PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_questions.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_questions.php > amazon_questions.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_questions.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_questions.js > amazon_questions.js`|
+| Python   | [python/amazon_questions.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_questions.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_questions.py > amazon_questions.py`|
+| PHP      | [php/amazon_questions.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_questions.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_questions.php > amazon_questions.php`|
+| Node.js  | [nodejs/amazon_questions.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_questions.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_questions.js > amazon_questions.js`|
 
 ### Amazon product best sellers listing scraping `amazon_bestsellers`
 Retrieve Amazon best-seller listings by supplying the category name to the query parameter.
@@ -582,9 +582,9 @@ Retrieve Amazon best-seller listings by supplying the category name to the query
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_bestsellers.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_bestsellers.py > amazon_bestsellers.py`|
-| PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_bestsellers.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_bestsellers.php > amazon_bestsellers.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_bestsellers.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_bestsellers.js > amazon_bestsellers.js`|
+| Python   | [python/amazon_bestsellers.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_bestsellers.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_bestsellers.py > amazon_bestsellers.py`|
+| PHP      | [php/amazon_bestsellers.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_bestsellers.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_bestsellers.php > amazon_bestsellers.php`|
+| Node.js  | [nodejs/amazon_bestsellers.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_bestsellers.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_bestsellers.js > amazon_bestsellers.js`|
 
 ## Response codes
 ### HTTP response codes
