@@ -17,7 +17,7 @@
   - [Amazon product pricing scraping](#amazon-product-pricing-scraping-amazon_pricing)
   - [Amazon product reviews scraping](#amazon-product-reviews-scraping-amazon_reviews)
   - [Amazon product questions & answers scraping](#amazon-product-questions--answers-scraping-amazon_questions)
-  - [Amazon product sellers scraping](#amazon-sellers-amazon_sellers)
+  - [Amazon product sellers scraping](#amazon-sellers-scraping-amazon_sellers)
   - [Amazon product best sellers listing scraping](#amazon-product-best-sellers-listing-scraping)
 - [Response codes](#response-codes)
   - [HTTP response codes](#http-response-codes)
@@ -39,7 +39,7 @@ Smartproxy offers an easy way to gather data from Amazon with the [eCommerce Scr
 
 ## Getting started
 To begin using the eCommerce Scraping API, grab a plan that suits your needs from the [dashboard](https://dashboard.smartproxy.com/ecommerce-scraping-api/). From here, you have two options:
-- **Scrape directly from the dashboard**. Navigate to the **Scrapers** tab, click **Create new project** and select a target from the available options. You can then use the web interface to build and make requests and return results with ease.
+- **Scrape directly from the dashboard**. Navigate to the **Scrapers** tab, click **Create new project**, and select a target from the available options. You can then easily use the web interface to build, make requests, and return results.
 - **Get authentication credentials**. If you want to integrate the API into your code, go to the **API Authentication** tab. Here you'll find the automatically generated username, password, or the basic authentication token. You can use them as authentication methods inside your script. Not sure where to start? See the [examples below](#amazon-scraping-by-target).
 
 ## Targets
@@ -54,7 +54,7 @@ The eCommerce Scraping API targets the following Amazon categories and pages:
 - Amazon bestsellers (`amazon_bestsellers`)
 
 ## Amazon scraping by target
-Amazon can be targeted by using one of the target parameters listed in this section. Each target has a unique set of additional parameters that are used to define your search in more detail.
+Amazon can be targeted using one of the target parameters listed in this section. Each target has a unique set of additional parameters that define your search in more detail.
 
 ### Amazon listings `amazon`
 Retrieve Amazon listings by supplying a full Amazon URL.
@@ -79,9 +79,6 @@ Retrieve Amazon listings by supplying a full Amazon URL.
 | PHP      | [php/amazon.php](/url)    | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazon-search.py`|
 | Node.js  | [nodejs/amazon.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazon-search.py`|
 
-#### Response Example
-`?`
-
 ### Amazon product search listing scraping `amazon_search`
 Retrieve Amazon search results by providing a query and a list of parameters.
 
@@ -96,7 +93,7 @@ Retrieve Amazon search results by providing a query and a list of parameters.
 |`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
 |`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
-|`category`   |`string`  | Product category ID. You can find it by opening a category and looking at the URL, under the *node* parameter: `node=<category>`.|
+|`category`   |`string`  | Product category ID. You can find it by opening a category and looking at the URL under the *node* parameter: `node=<category>`.|
 |`merchant`   |`string`  | The merchant ID. You can find it by opening the *Sold by* link of the seller on a product page. The merchant ID appears in the URL under the *seller* parameter: `seller=<merchant>`.|
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
@@ -240,7 +237,7 @@ Retrieve Amazon best seller listings by supplying the category name to the query
 |`page_from`  |`integer`  | The specific result page number to start scraping from. |
 |`num_pages`  |`integer`  | Number of results to retrieve from each page.|
 |`device_type`|`string`  | The type of device and browser the request should simulate. Possible values: <br>`desktop`<br>`desktop_chrome`<br>`desktop_edge`<br>`desktop_firefox`<br>`desktop_opera`<br>`desktop_safari`<br>`mobile`<br>`mobile_android`<br>`mobile_ios`<br>`tablet`<br>`tablet_android`<br>`tablet_ios`|
-|`category`  |`string`  | Product category ID. You can find it by opening a category and looking at the URL, under the *node* parameter: `node=<category>` |
+|`category`  |`string`  | Product category ID. You can find it by opening a category and looking at the URL under the *node* parameter: `node=<category>` |
 |`geo`       |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
 |`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
 
@@ -259,13 +256,13 @@ A HTTP response status code indicates whether the request has been successfully 
 | :----- | :--------    | :---------- | :------- |
 |**200** | OK           | The request was successful and server has returned a response.	 | Celebrate! |
 |**204** | No content   | The job wasn't completed yet. | Wait a few seconds before trying again.     |
-|**400** | Bad request  | Bad structure of the request. | Check your request again and ensure it's format is correct. |
+|**400** | Bad request  | Bad structure of the request. | Check your request again and ensure its format is correct. |
 |**401** | Unauthorized | Incorrect login credentials or missing authorization. | Check your provided credentials for authorization. |
 |**403** | Forbidden    | Your account doesn't have access to this resource. | Ensure that the target is supported and isn't on the [blocked target list](#https://smartproxy.com/faq/general/do-you-have-any-blocked-sites).|
 |**404** | Not found    | Your target wasn't found. | Check if the URL you entered is correct. |
-|**429** | Too many requests | Exceeded subscription rate limit. | Make sure you still have at least one request left. Wait a couple minutes and try again. If you're encountering the error often – [chat with us](#https://direct.lc.chat/12092754/) to see if your rate limit can be increased. |
-|**500** | Internal server error | Service unavailable, possibly due to internal issues. | Wait a couple minutes and send another request. [Contact us](#https://direct.lc.chat/12092754/) for more information. |
-|**524** | Timeout | Service unavailable due to internal issues or request timed out. | Wait a couple minutes and send another request. [Contact us](#https://direct.lc.chat/12092754/) for more information. |
+|**429** | Too many requests | Exceeded subscription rate limit. | Make sure you still have at least one request left. Wait a couple of minutes and try again. If you're encountering the error often – [chat with us](#https://direct.lc.chat/12092754/) to see if your rate limit can be increased. |
+|**500** | Internal server error | Service unavailable, possibly due to internal issues. | Wait a couple of minutes and send another request. [Contact us](#https://direct.lc.chat/12092754/) for more information. |
+|**524** | Timeout | Service unavailable due to internal issues or request timed out. | Wait a couple of minutes and send another request. [Contact us](#https://direct.lc.chat/12092754/) for more information. |
 
 ### Parsed result response codes
 You can find these response codes in the JSON response as `parse_status_code` and `status_code`.
@@ -273,10 +270,10 @@ You can find these response codes in the JSON response as `parse_status_code` an
 |:-----------|:----------------|:------------|:---------|
 | **12000**  |Success          | Server has replied and given the requested response.|Party!|
 | **12002**  |Error            | Parsing has failed. |Try again in a few minutes, or check your request parameters.|
-| **12003**  |Not supported    | Targeted page parsing isn't supported. |Only target pages that are parseable, or use parsing libraries to extract specific data from an HTML response. |
+| **12003**  |Not supported    | Targeted page parsing isn't supported. |Only target parseable pages, or use parsing libraries to extract specific data from an HTML response. |
 | **12004**  |Response not full| Some fields were not parsed and are missing. |Ensure that the target page contains the required information and try again.|
 | **12005**  |Response not fully parsed| Some fields might not have been parsed and are returned unparsed. |Try again in a few minutes, or check your request parameters.|
-| **12006**  |Error    | Unexpected error.|[Let us know]((#https://direct.lc.chat/12092754/)) the task ID and we'll check what went wrong.|
+| **12006**  |Error    | Unexpected error.|[Let us know]((#https://direct.lc.chat/12092754/)) the task ID, and we'll check what went wrong.|
 | **12007**  |Unknown  | Couldn't determine whether the data was parsed correctly.|Check the response manually to see if it was parsed correctly.|
 | **12008**  |Error    | Failed to parse all the data. |Check your request parameters, or if the information is present on the target page.|
 | **12009**  |Error    | Target not found. |Make sure the parameters you passed are correct and supported.|
