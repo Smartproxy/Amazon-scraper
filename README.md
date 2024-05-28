@@ -17,7 +17,6 @@
   - [Amazon product pricing scraping](#amazon-product-pricing-scraping-amazon_pricing)
   - [Amazon product reviews scraping](#amazon-product-reviews-scraping-amazon_reviews)
   - [Amazon product questions & answers scraping](#amazon-product-questions--answers-scraping-amazon_questions)
-  - [Amazon product sellers scraping](#amazon-sellers-scraping-amazon_sellers)
   - [Amazon product best sellers listing scraping](#amazon-product-best-sellers-listing-scraping-amazon_bestsellers)
 - [Response codes](#response-codes)
   - [HTTP response codes](#http-response-codes)
@@ -50,7 +49,6 @@ The eCommerce Scraping API targets the following Amazon categories and pages:
 - Amazon product pricing (`amazon_pricing`)
 - Amazon product reviews (`amazon_reviews`)
 - Amazon product questions & answers (`amazon_questions`)
-- Amazon sellers (`amazon_sellers`)
 - Amazon bestsellers (`amazon_bestsellers`)
 
 ## Amazon scraping by target
@@ -561,28 +559,6 @@ Retrieve Amazon questions and answers by supplying Amazon product ID (ASIN) usin
 | Python   | [python/amazon-questions.py](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 | PHP      | [php/amazon-questions.php](/url)    | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 | Node.js  | [nodejs/amazon-questions.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
-
-### Amazon sellers scraping `amazon_sellers`
-Retrieve Amazon seller page information by supplying a seller ID.
-
-#### Parameters
-**Required**: `target`, `query`
-
-| Parameter   | Type     | Description |
-|:------------|:---------|:------------|
-|`target`     |`string`  | Must be `amazon_reviews`.|
-|`query`      |`string`  | 13-character seller ID. |
-|`parse`      |`boolean` | Set it to `TRUE` if the result should be parsed in HTML.|
-|`domain`     |`string`  | The site domain determines the regional version of Amazon you'll see. For example, using `.co.uk` will show you results from the UK version of Amazon.|
-|`geo`        |`string`  | The geographical location that the result depends on. You can use an [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) country code (ex. `GB`) or a US ZIP code (ex. `99950`).|
-|`session_id`|`string`  | Name your session to re-use the same IP for multiple requests for up to 10 minutes. |
-
-#### Examples
-| Language | File                             | Download  |
-|:---------|:---------------------------------|:----------|
-| Python   | [python/amazon-sellers.py](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
-| PHP      | [php/amazon-sellers.php](/url)    | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
-| Node.js  | [nodejs/amazon-sellers.js](/url)  | `curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py`|
 
 ### Amazon product best sellers listing scraping `amazon_bestsellers`
 Retrieve Amazon best seller listings by supplying the category name to the query parameter.
