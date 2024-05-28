@@ -32,9 +32,9 @@ Smartproxy offers an easy way to gather data from Amazon with the [eCommerce Scr
 
 ## Features
  - Ready-made targets to efficiently scrape the most popular Amazon pages
- - Retrieves results as formatted JSON data
- - Quick and simple authentication
- - Easy parameter configuration
+ - Results retrieved as formatted JSON data
+ - Quick and simple parameter configuration & authentication
+ - No IP blocks or rate-limitations thanks to built-in proxies
  - User-friendly web interface with scheduling options
 
 ## Getting started
