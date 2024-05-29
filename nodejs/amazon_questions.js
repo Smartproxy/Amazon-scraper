@@ -3,14 +3,13 @@ async function fetchAmazonData() {
         const response = await fetch("https://scraper-api.smartproxy.com/v2/scrape", {
             method: "POST",
             body: JSON.stringify({
-                "target": "amazon_search",
-                "query": "laptop",
-                "page_from": "1",
+                "target": "amazon_questions",
+                "query": "B09H74FXNW",
                 "parse": true
             }),
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Basic VTAwMDAxNjgwOTM6UFcxMDFkNDc0MjM5MTY2NGVhZDJkMTJiYjBjNTAwZjI3MzI="
+                "Authorization": "Basic [your basic authentication token]"
             }
         });
 
