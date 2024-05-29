@@ -21,7 +21,6 @@
 - [Response codes](#response-codes)
   - [HTTP response codes](#http-response-codes)
   - [Parsed result response codes](#parsed-result-response-codes)
-- [Postman collection](#postman-collection)
 - [License](#license)
 
 ## Introduction
