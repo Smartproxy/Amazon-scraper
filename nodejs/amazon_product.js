@@ -10,7 +10,7 @@ async function fetchAmazonData() {
             }),
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Basic VTAwMDAxNjgwOTM6UFcxMDFkNDc0MjM5MTY2NGVhZDJkMTJiYjBjNTAwZjI3MzI="
+                "Authorization": "Basic [your basic authentication token]"
             }
         });
 
