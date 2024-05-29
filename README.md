@@ -75,7 +75,7 @@ Retrieve Amazon listings by supplying a full Amazon URL.
 |:---------|:---------------------------------|:----------|
 | Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon.py > amazon.py`|
 | PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon.php > amazon.php`|
-| Node.js  | [nodejs/amazon.js](/https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon.js > amazon.js`|
+| Node.js  | [nodejs/amazon.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon.js > amazon.js`|
 
 #### Response example
 ```
@@ -485,9 +485,9 @@ Retrieve Amazon listings by supplying Amazon product ID (ASIN).
 #### Examples
 | Language | File                             | Download  |
 |:---------|:---------------------------------|:----------|
-| Python   | [python/amazon.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_product.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_product.py > amazon_product.py`|
-| PHP      | [php/amazon.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_product.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_product.php > amazon_product.php`|
-| Node.js  | [nodejs/amazon.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_product.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_product.js > amazon_product.js`|
+| Python   | [python/amazon_product.py](https://github.com/Smartproxy/Amazon-scraper/blob/main/python/amazon_product.py)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/python/amazon_product.py > amazon_product.py`|
+| PHP      | [php/amazon_product.php](https://github.com/Smartproxy/Amazon-scraper/blob/main/php/amazon_product.php)    | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/php/amazon_product.php > amazon_product.php`|
+| Node.js  | [nodejs/amazon_product.js](https://github.com/Smartproxy/Amazon-scraper/blob/main/nodejs/amazon_product.js)  | `curl https://raw.githubusercontent.com/Smartproxy/Amazon-scraper/main/nodejs/amazon_product.js > amazon_product.js`|
 
 ### Amazon product pricing scraping `amazon_pricing`
 Retrieve Amazon pricing results by supplying Amazon product ID (ASIN). The response will list all sellers of the same product and their prices.
@@ -615,9 +615,6 @@ You can find these response codes in the JSON response as `parse_status_code` an
 | **12007**  |Unknown  | Couldn't determine whether the data was parsed correctly.|Check the response manually to see if it was parsed correctly.|
 | **12008**  |Error    | Failed to parse all the data. |Check your request parameters, or if the information is present on the target page.|
 | **12009**  |Error    | Target not found. |Make sure the parameters you passed are correct and supported.|
-
-## Postman collection
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/23304112-92a123e7-171c-497e-8ca1-57eff04361f3?action=collection%2Ffork&collection-url=entityId%3D23304112-92a123e7-171c-497e-8ca1-57eff04361f3%26entityType%3Dcollection%26workspaceId%3D52705bab-433c-4fbf-afce-ccbfc97430fe)
 
 ## License
 All code is released under the [MIT License](https://github.com/Smartproxy/Smartproxy/blob/master/LICENSE).
