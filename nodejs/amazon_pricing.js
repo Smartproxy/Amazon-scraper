@@ -3,7 +3,7 @@ async function fetchAmazonData() {
         const response = await fetch("https://scraper-api.smartproxy.com/v2/scrape", {
             method: "POST",
             body: JSON.stringify({
-                "target": "amazon_product",
+                "target": "amazon_pricing",
                 "query": "B09H74FXNW",
                 "parse": true,
                 "autoselect_variant": false
